@@ -35,8 +35,8 @@ main {
 }
 
 .container {
-  width: 60%; /* se for uma tela menor que 980px vai se adaptar a 70% */
-  max-width: 960px; /* quando chegar em 980px para de aumentar */
+  width: 60%;
+  max-width: 960px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 25px 50px -12px;
   background-color: #fff;
   display: flex;
@@ -121,8 +121,6 @@ main {
   line-height: 23px;
 }
 
-/* REPOSITORIES */
-
 .container .profile-data .repositories h2{
   margin-bottom: 30px;
   text-align: center;
@@ -141,6 +139,19 @@ main {
   display: block;
   border-radius: 7px;
   transition: 0.3s ease-in-out;
+}
+
+.container .profile-data .repositories ul li a .repositories-info{
+  display: flex;
+}
+
+.container .profile-data .repositories ul li a p{
+  border-radius: 5px;
+  padding: 4px;
+  margin-right: 5px;
+  margin-top: 10px;
+  color: #ffffff;
+  background-color: blueviolet;
 }
 
 .container .profile-data .repositories ul li a:hover{
