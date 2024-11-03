@@ -22,7 +22,7 @@ const screen = {
         }
 
         let eventsItens = ''
-        user.events.forEach(function (event){
+        user.events.forEach(event => {
                 if(event.type === "PushEvent"){
                     eventsItens += `<li><p><span>${event.repo.name}</span>&emsp;- ${event.payload.commits[0].message}</p></li>`
                 }else if(event.type === "CreateEvent"){
